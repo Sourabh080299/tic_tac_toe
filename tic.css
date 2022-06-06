@@ -1,0 +1,84 @@
+	*{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: black;
+    }
+    h1 {
+       
+		color: rgb(79, 176, 1);
+		font-size: 45px;
+	}
+
+	/* 3*3 Grid */
+	#b1, #b2, #b3, #b4, #b5,
+	#b6, #b7, #b8, #b9 {
+		width: 80px;
+		height: 55px;
+		
+		border: 2px solid rgb(59, 201, 27);
+		border-radius: 6px;
+		font-size: 45px;
+		text-align: center;
+        background-color: rgb(0, 0, 0);
+	}
+
+	/* Reset Button */
+	#but {
+		box-sizing: border-box;
+		width: 95px;
+		height: 40px;
+		border: 1px solid dodgerblue;
+		margin: auto;
+		border-radius: 4px;
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+
+		background-color: dodgerblue;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+	/* Player turn space */
+	#print {
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+
+		color: dodgerblue;
+		font-size: 20px;
+	}
+
+	/* Main Container */
+	#main {
+        
+        height: 100vh;
+		text-align: center;
+	}
+    #main h1{
+        background-color: aqua;
+    }
+	/* Game Instruction Text */
+	.ins {
+		font-family: Verdana,
+			Geneva, Tahoma, sans-serif;
+			
+		color: dodgerblue;
+		font-size: 17px;
+	}
+    #movetext{
+        display: block; /* Important to give the content a width */
+      
+        width: 100%;
+        transform: translateX(100%); /* Animation start out of the screen */
+      
+        /* Add the animation */
+        animation: move 30s linear infinite /* infinite make reapeat the animation indefinitely */;
+      }
+      
+      /* Create the animation */
+      @keyframes move {
+        to { transform: translateX(-100%); }
+      }
+
